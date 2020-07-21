@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asesorías en Mantenimiento y Operación</title>
+    <link rel="icon" href="./img/favicon.jpg" sizes="any" type="image/jpg" />
+    <link rel="stylesheet" href="./css/services2-styles.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./addMargin2.js"></script>
+    <script src="smoothscroll.js"></script>
+</head>
+
+<body>
+
+    <!--HEADER-->
+    <header id="header">
+        <div class="wrap">
+            <nav>
+                <input onclick="addMargin();" type="checkbox" id="check" autocomplete="off" />
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <label id="logo"><img src="./img/JPEG/logoheader.jpg" alt="logo" /></label>
+                <ul id="menu">
+                    <li><button id="back-button" onclick="goBack();"><a onclick="left_checker();">VOLVER</a></button>
+                    </li>
+                    <li><a onclick="left_checker();" href="#contact">CONTACTO</a></li>
+                </ul id="menu">
+            </nav>
+        </div>
+    </header>
+    <div class="clearfix"></div>
+    <div id="spacing">
+    </div>
+
+    <!--CONTENT-->
+    <section id="info">
+        <div id="container1">
+            <div id="h1-container">
+                <h1 id="h1">ASESORÍAS EN MANTENIMIENTO Y OPERACIÓN DE CALDERAS</h1>
+            </div>
+        </div>
+
+        <div id="container2">
+            <div id="description-container">
+                <h2>Descripción</h2>
+                <p>Con el fin de asegurar los estándares de calidad y de mantenimiento de las calderas, ofrecemos
+                    nuestro servicio de asesoramiento en calderas para su empresa.</p>
+            </div>
+        </div>
+
+        <div id="container3">
+            <div id="especifications-container">
+                <h2>Especificaciones</h2>
+                <ul>
+                    <li>Mantención correctiva, mantos, cambio de tubos, fogón, cañerías de alimentación de agua,
+                        cañerias de salida de vapor, soldadura general .</li>
+                    <li>Limpieza de equipo, aseo de sistema de superficie de calefacción, limpieza de tubos , fogón,
+                        ductos, válvulas de purga , etc.</li>
+                    <li>Mantención de válvulas de Seguridad, revisión , limpieza de asiento , calibración .</li>
+                    <li>Revisión de sistemas de control ; nivel de agua , Presostatos , termostatos, control de llama.
+                    </li>
+                    <li>Revisión de Sistemas de Observación ; Tubos de Nivel, Manómetros, termómetros.</li>
+                    <li>Reparación de Ductos de emisión de gases de la combustión.</li>
+                    <li>Revisión del funcionamiento y operación de la caldera, control de parámetros , alimentación de
+                        agua, calidad del producto vapor.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer id="footer">
+        <div id="contact"></div>
+        <h2 id="footer-title">CONTACTO</h2>
+        <div class="contact-info">
+            <form action="email_consultas.php" method="post">
+                <p class="p-inputs"><input type="text" class="inputs" name="nombre" placeholder="Nombre*"
+                        required="required" autocomplete="off"></p><br />
+                <p class="p-inputs"><input type="email" class="inputs" name="email" placeholder="Email*"
+                        required="required" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" autocomplete="off">
+                </p><br />
+                <p class="p-inputs"><input type="text" class="inputs" name="asunto" placeholder="Asunto*"
+                        required="required" autocomplete="off"></p><br />
+                <p><textarea id="input-text-area" placeholder="Mensaje*" required="required"
+                        autocomplete="off"></textarea></p><br />
+                <p class="p-inputs"><input type="submit" value="ENVIAR MENSAJE" autocomplete="off"></p>
+            </form>
+            <div class="info-details">
+                <h3>Dirección</h3><br />
+                <p>Diego Hormazábal 421, Arica, Chile</p><br />
+                <h3>Teléfono</h3><br />
+                <p>+569 84747383</p><br />
+                <h3>Contáctanos</h3><br />
+                <p>contacto@sinergiarica.cl</p><br />
+            </div>
+        </div>
+
+
+        <div class="clearfix"></div>
+        <div class="wrap">
+            <p id="all-rights-reserved">Todos los Derechos Reservados &copy;
+                <script>document.write(new Date().getFullYear());</script> SinergiArica SpA
+            </p>
+        </div>
+
+    </footer>
+
+
+
+
+
+</body>
+
+</html>
