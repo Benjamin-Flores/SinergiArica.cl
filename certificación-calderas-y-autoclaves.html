@@ -5,12 +5,15 @@
     <title>Certificación de Calderas y Autoclaves</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-sacale=1.0" />
+    <meta name="Description" CONTENT="Certificación de Calderas y Autoclaves de acuerdo al Decreto Supremo  N°10, Chile."/>
+    <meta name="author" content="SinergiArica SpA" />
     <link rel="icon" href="./img/favicon.jpg" sizes="any" type="image/jpg" />
     <link rel="stylesheet" type="text/css" href="./css/services4-styles.css" />
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script type="text/javascript" src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="./addMargin2.js"></script>
-    <script src="smoothscroll.js"></script>
+    <script type="text/javascript" src="./js/addMargin2.js"></script>
+    <script text="text/javascript" src="./js/smoothscroll.js"></script>
+    <script text="text/javascript" src="./js/submit.js"></script>
 </head>
 
 <body>
@@ -48,7 +51,7 @@
         <div id="container2">
             <div id="description-container">
                 <h2>Descripción</h2>
-                <p>SinergiArica SpA cuenta con profesional con 15 años de experiencia en Minería abalado por la SEREMI DE SALUD como Inspector de Calderas y Autoclaves para todo Chile. </p>
+                <p>SinergiArica SpA cuenta con Ingeniero Civil Industrial con 15 años de experiencia en Minería avalado por la SEREMI DE SALUD como Inspector de Calderas y Autoclaves para todo Chile. </p>
             </div>
         </div>
 
@@ -136,13 +139,11 @@
                 <p>
                     Esta nueva normativa indica las funciones que los operadores deben cumplir, pero también
                     determina las facultades que deben poseer.
-                    Todos los operadores deben contar con licencia de enseñanza media. Sin embargo, aquellos que operen
+                    Todos los operadores deben contar con licencia de Enseñanza Media. Sin embargo, aquellos que operen
                     calderas de vapor de gran presión (igual o superior a 42kg/cm2), deben contar además con título de
                     nivel técnico o profesional en el área industrial. Las calderas de calefacción y calderas de fluidos
                     térmicos podrán eximirse de la presencia permanente del operador calificado, no obstante, éste
-                    estará a cargo de supervisar su funcionamiento. Los operadores que tienen registro ante el SEREMI y
-                    que es de carácter indefinido, tienen plazo hasta el 17 abril 2015 (1 año desde la entrada en
-                    vigencia de este decreto), para obtener su nueva autorización.
+                    estará a cargo de supervisar su funcionamiento. 
                 </p>
                 <h3>REVISIONES Y PRUEBAS REALIZADAS POR UN PROFESIONAL FACULTADO: </h3>
                 <P>
@@ -166,23 +167,24 @@
         <div id="contact"></div>
         <h2 id="footer-title">CONTACTO</h2>
         <div class="contact-info">
-            <form action="email_consultas.php" method="post">
+            <iframe id="form-iframe" name="formSending"></iframe>
+            <form name="contact-form" action="index.php" method="post" target="formSending">
                 <p class="p-inputs"><input type="text" class="inputs" name="nombre" placeholder="Nombre*"
-                        required="required" autocomplete="off"></p><br />
+                        required="required" pattern="^[a-zA-Z0-9\s]+{3,}$" autocomplete="off"></p><br />
                 <p class="p-inputs"><input type="email" class="inputs" name="email" placeholder="Email*"
                         required="required" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" autocomplete="off">
                 </p><br />
                 <p class="p-inputs"><input type="text" class="inputs" name="asunto" placeholder="Asunto*"
-                        required="required" autocomplete="off"></p><br />
-                <p><textarea id="input-text-area" placeholder="Mensaje*" required="required"
+                        required="required" pattern="^[A-Za-z\d\.]{3,}$" autocomplete="off"></p><br />
+                <p><textarea id="input-text-area" name="input-text-area" placeholder="Mensaje*" required="required"
                         autocomplete="off"></textarea></p><br />
-                <p class="p-inputs"><input type="submit" value="ENVIAR MENSAJE" autocomplete="off"></p>
+                <p class="p-inputs"><input type="submit" value="ENVIAR MENSAJE" onclick="submitForm()" autocomplete="off"></p>
             </form>
             <div class="info-details">
                 <h3>Dirección</h3><br />
                 <p>Diego Hormazábal 421, Arica, Chile</p><br />
                 <h3>Teléfono</h3><br />
-                <p>+569 84747383</p><br />
+                <p>+56 9 84747383</p><br />
                 <h3>Contáctanos</h3><br />
                 <p>contacto@sinergiarica.cl</p><br />
             </div>

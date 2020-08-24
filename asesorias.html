@@ -3,13 +3,16 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" CONTENT="Asesorías en Mantenimiento de calderas, conoce a SinergiArica SpA empresa especializada en Ingeniería y Servicios."/>
+    <meta name="author" content="SinergiArica SpA" />
     <title>Asesorías en Mantenimiento y Operación</title>
     <link rel="icon" href="./img/favicon.jpg" sizes="any" type="image/jpg" />
-    <link rel="stylesheet" href="./css/services2-styles.css" />
+    <link rel="stylesheet" type="text/css" href="./css/services2-styles.css" />
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="./addMargin2.js"></script>
-    <script src="smoothscroll.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/addMargin2.js"></script>
+    <script type="text/javascript" src="./js/smoothscroll.js"></script>
+    <script type="text/javascript" src="./js/submit.js"></script>
 </head>
 
 <body>
@@ -76,23 +79,24 @@
         <div id="contact"></div>
         <h2 id="footer-title">CONTACTO</h2>
         <div class="contact-info">
-            <form action="email_consultas.php" method="post">
+            <iframe id="form-iframe" name="formSending"></iframe>
+            <form name="contact-form" action="index.php" method="post" target="formSending"">
                 <p class="p-inputs"><input type="text" class="inputs" name="nombre" placeholder="Nombre*"
-                        required="required" autocomplete="off"></p><br />
+                        required="required" pattern="^[a-zA-Z0-9\s]+{3,}$" autocomplete="off"></p><br />
                 <p class="p-inputs"><input type="email" class="inputs" name="email" placeholder="Email*"
                         required="required" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" autocomplete="off">
                 </p><br />
                 <p class="p-inputs"><input type="text" class="inputs" name="asunto" placeholder="Asunto*"
-                        required="required" autocomplete="off"></p><br />
-                <p><textarea id="input-text-area" placeholder="Mensaje*" required="required"
+                        required="required" pattern="^[A-Za-z\d\.]{3,}$" autocomplete="off"></p><br />
+                <p><textarea id="input-text-area" name="input-text-area" placeholder="Mensaje*" required="required"
                         autocomplete="off"></textarea></p><br />
-                <p class="p-inputs"><input type="submit" value="ENVIAR MENSAJE" autocomplete="off"></p>
+                <p class="p-inputs"><input type="submit" value="ENVIAR MENSAJE" onclick="submitForm()" autocomplete="off"></p>
             </form>
             <div class="info-details">
                 <h3>Dirección</h3><br />
                 <p>Diego Hormazábal 421, Arica, Chile</p><br />
                 <h3>Teléfono</h3><br />
-                <p>+569 84747383</p><br />
+                <p>+56 9 84747383</p><br />
                 <h3>Contáctanos</h3><br />
                 <p>contacto@sinergiarica.cl</p><br />
             </div>

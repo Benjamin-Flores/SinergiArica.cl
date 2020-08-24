@@ -1,10 +1,11 @@
 'use strict'
 
+
 //This function add some margin-top when the mobile-navigation-bar icon is clicked, and remove that margin when is clicked again
 function addMargin() {
 
-    if (document.getElementById("h1").style.marginTop != "55vh") {
-        document.getElementById("h1").style.marginTop = "55vh";
+    if (document.getElementById("h1").style.marginTop != "30vh") {
+        document.getElementById("h1").style.marginTop = "30vh";
     } else {
         document.getElementById("h1").style.marginTop = "20px";
     }
@@ -29,3 +30,4 @@ window.addEventListener("orientationchange", function() {
         document.getElementById("h1").style.marginTop = "20px";
     }
 });
+
