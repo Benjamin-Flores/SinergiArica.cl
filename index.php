@@ -28,6 +28,7 @@
     
     $headers = "From: $email_addressn";
     $sent = mail('benjamin.flores@sinergiarica.cl', 'Consulta de Servicios',$mensaje_final, $cabeceras);
+    $sent2 = mail('contacto@sinergiarica.cl', 'Consulta de Servicios',$mensaje_final, $cabeceras);
 
     #Thank user or notify them of a problem
 

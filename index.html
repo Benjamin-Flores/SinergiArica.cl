@@ -8,13 +8,23 @@
     <meta name="Description" CONTENT="Certificación de Caldera y Autoclaves Chile, conoce a SinergiArica SpA empresa especializada en Ingeniería y Servicios."/>
     <meta name="author" content="SinergiArica SpA" />
     <link rel="icon" href="./img/favicon.jpg" sizes="any" type="image/jpg" />
+    <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script type="text/javascript" src="./js/addMargin.js"></script>
     <script type="text/javascript" src="./js/smoothscroll.js"></script>
     <script type="text/javascript" src="./js/index.js"></script>
     <script type="text/javascript" src="./js/submit.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176274444-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-176274444-1');
+    </script>
+
 
 </head>
 
@@ -24,17 +34,14 @@
     <header id="header">
         <div class="wrap">
             <nav>
-                <input onclick="addMargin();" type="checkbox" id="check" autocomplete="off" />
-                <label for="check" class="checkbtn">
-                    <i class="fas fa-bars"></i>
-                </label>
+                <button  class="checkbtn" type="button"><i class="fas fa-bars"></i></button>
                 <label id="logo"><img src="./img/JPEG/logoheader.jpg" alt="logo-sinergia" /></label>
-                <ul>
-                    <li><a onclick="left_checker();" href="#spacing">INICIO</a></li>
-                    <li><a onclick="left_checker();" href="#about">NOSOTROS</a></li>
-                    <li><a onclick="left_checker();" href="#services">SERVICIOS</a></li>
-                    <li><a onclick="left_checker();" href="#clients-">CLIENTES</a></li>
-                    <li><a onclick="left_checker();" href="#contact">CONTACTO</a></li>
+                <ul id="lateral-menu">
+                    <li><a class="left-checker" href="#spacing">INICIO</a></li>
+                    <li><a class="left-checker" href="#about">NOSOTROS</a></li>
+                    <li><a class="left-checker" href="#services">SERVICIOS</a></li>
+                    <li><a class="left-checker" href="#clients-">CLIENTES</a></li>
+                    <li><a class="left-checker" href="#contact">CONTACTO</a></li>
                 </ul>
             </nav>
         </div>
@@ -103,10 +110,10 @@
         <div id="article">
             <article class="articles">
                 <a rel="canonical" href="javascript:void(0);"
-                    onclick="javascript:window.location.href='./certificación-calderas-y-autoclaves.html'"><img
+                    onclick="javascript:window.location.href='./certificacion-calderas-y-autoclaves.html'"><img
                         class="service-image" src="./img/JPEG/muestra1-compressor.jpg" alt="caldera" /></a>
                 <a rel="canonical" href="javascript:void(0);"
-                    onclick="javascript:window.location.href='./certificación-calderas-y-autoclaves.html'">
+                    onclick="javascript:window.location.href='./certificacion-calderas-y-autoclaves.html'">
                     <h3>Certificación de <br /> Calderas y Autoclaves</h3>
                 </a>
             </article>
@@ -123,10 +130,10 @@
 
             <article class="articles">
                 <a rel="canonical" href="javascript:void(0);"
-                    onclick="javascript:window.location.href='./asesorias.html';"><img class="service-image"
+                    onclick="javascript:window.location.href='./asesoria.html';"><img class="service-image"
                         src="./img/JPEG/muestra4-compressor.jpg" alt="autoclave" /></a>
                 <a rel="canonical" href="javascript:void(0);"
-                    onclick="javascript:window.location.href='./asesorias.html';">
+                    onclick="javascript:window.location.href='./asesoria.html';">
                     <h3>Asesorías en <br />Mantenimiento y Operación </h3>
                 </a>
             </article>
@@ -186,7 +193,7 @@
                 <h3>Dirección</h3><br />
                 <p>Diego Hormazábal 421, Arica, Chile</p><br />
                 <h3>Teléfono</h3><br />
-                <p>+56 9 84747383</p><br />
+                <p><a href="tel:+56 9 84747383"> +&zwj;56 9 84747383</a></p><br />
                 <h3>Contáctanos</h3><br />
                 <p>contacto@sinergiarica.cl</p><br />
             </div>

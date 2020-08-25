@@ -7,13 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-sacale=1.0" />
     <meta name="Description" CONTENT="Certificación de Calderas y Autoclaves de acuerdo al Decreto Supremo  N°10, Chile."/>
     <meta name="author" content="SinergiArica SpA" />
+    <meta name="format-detection" content="telephone=no">
     <link rel="icon" href="./img/favicon.jpg" sizes="any" type="image/jpg" />
     <link rel="stylesheet" type="text/css" href="./css/services4-styles.css" />
     <script type="text/javascript" src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script type="text/javascript" src="./js/addMargin2.js"></script>
     <script text="text/javascript" src="./js/smoothscroll.js"></script>
     <script text="text/javascript" src="./js/submit.js"></script>
+    <script text="text/javascript" src="./js/index_2.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176274444-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-176274444-1');
+    </script>
 </head>
 
 <body>
@@ -21,16 +30,14 @@
     <header id="header">
         <div class="wrap">
             <nav>
-                <input onclick="addMargin();" type="checkbox" id="check" autocomplete="off" />
-                <label for="check" class="checkbtn">
-                    <i class="fas fa-bars"></i>
-                </label>
+                
+                <button  class="checkbtn" type="button"><i class="fas fa-bars"></i></button>
                 <label id="logo"><img src="./img/JPEG/logoheader.jpg" alt="logo" /></label>
                 <ul id="menu">
-                    <li><button id="back-button" onclick="goBack();"><a onclick="left_checker();">VOLVER</a></button>
+                    <li><button id="back-button" onclick="goBack();"><a class="left-checker">VOLVER</a></button>
                     </li>
 
-                    <li><a onclick="left_checker();" href="#contact">CONTACTO</a></li>
+                    <li><a class="left-checker" href="#contact">CONTACTO</a></li>
                 </ul>
             </nav>
         </div>
@@ -178,13 +185,13 @@
                         required="required" pattern="^[A-Za-z\d\.]{3,}$" autocomplete="off"></p><br />
                 <p><textarea id="input-text-area" name="input-text-area" placeholder="Mensaje*" required="required"
                         autocomplete="off"></textarea></p><br />
-                <p class="p-inputs"><input type="submit" value="ENVIAR MENSAJE" onclick="submitForm()" autocomplete="off"></p>
+                <p class="p-inputs"><input id="btnsubmit" type="submit" value="ENVIAR MENSAJE" onclick="submitForm()" autocomplete="off"></p>
             </form>
             <div class="info-details">
                 <h3>Dirección</h3><br />
                 <p>Diego Hormazábal 421, Arica, Chile</p><br />
                 <h3>Teléfono</h3><br />
-                <p>+56 9 84747383</p><br />
+                <p><a href="tel:+56 9 84747383"> +&zwj;56 9 84747383</a></p><br />
                 <h3>Contáctanos</h3><br />
                 <p>contacto@sinergiarica.cl</p><br />
             </div>

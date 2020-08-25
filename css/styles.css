@@ -57,6 +57,7 @@ header{
 
 #section a{
     text-decoration: 0;
+    -webkit-tap-highlight-color: transparent !important;
 }
 
 
@@ -244,6 +245,7 @@ header{
 .articles a{
     text-decoration: none;
     color: #222222;
+    -webkit-tap-highlight-color: transparent !important;
     
 }
 
@@ -307,6 +309,10 @@ header{
 }
 
 /*FOOTER*/
+
+#btnsubmit{
+    -webkit-appearance: none;
+}
 
 #form-iframe{
     display: none;
@@ -407,6 +413,11 @@ form{
     font-size: 18px;
     
     
+}
+
+.info-details p a{
+    text-decoration: none !important;
+    color: white !important;
 }
 
 .info-details h3{
@@ -554,11 +565,20 @@ a.active, a:hover{
     line-height: 87px;
     margin-right: 30px;
     cursor: pointer;
+    background-color: transparent;
     display: none;
+}
+
+.checkbtn:active{
+    background-color: transparent;
 }
 
 #check{
     display: none;
+}
+
+#check:active{
+    background-color: transparent !important;
 }
 
 /*MEDIA QUERIES*/
@@ -714,9 +734,33 @@ a.active, a:hover{
 
     .checkbtn{
         display: block;
+        border: 1px solid white;
+        background-color: white !important;
+        -webkit-tap-highlight-color: transparent;
+        height: 70px !important;
+
     }
 
-    ul{
+    .checkbtn:focus{
+        outline: 0;
+        box-shadow: none!important;
+        background-color: white !important;
+    }
+
+    .checkbtn:hover{
+        background-color: white !important;
+    }
+
+    .checkbtn:active{
+        border: 1px solid white !important;
+        background-color: white !important;
+    }
+
+    
+    
+    
+    
+    #lateral-menu{
         position: fixed;
         padding-left: 0;
         width: 100%;
@@ -737,6 +781,7 @@ a.active, a:hover{
         color: white;
         width: 100%;
         margin-left: 0px;
+        -webkit-tap-highlight-color: transparent;
     }
 
     a:hover, a.active{
@@ -744,12 +789,12 @@ a.active, a:hover{
         color: #98ff1b;
     }
 
-
-    #check:checked ~ ul{
-        left: 0;
-        background-color: #333333;
-        
+    #check:checked{
+        background-color: white !important;
     }
+
+    
+    
 }
 
 

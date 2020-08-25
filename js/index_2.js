@@ -1,15 +1,6 @@
 'use strict'
 
-
-window.addEventListener('load', function(){
-
-    
-
-    document.querySelectorAll('.articles').forEach(element => element.addEventListener('click', function(){
-        this.style.opacity = "0.4";
-    }));
-
-    
+window.addEventListener('load', () => {
 
 
     var button = document.querySelector('.checkbtn');
@@ -20,7 +11,7 @@ window.addEventListener('load', function(){
 
     function menuLateral(){
         
-        var lateral_menu = document.getElementById('lateral-menu');
+        var lateral_menu = document.getElementById('menu');
         addMargin();
 
         if(lateral_menu.style.left == "0px"){
@@ -38,8 +29,8 @@ window.addEventListener('load', function(){
         //This function add some margin-top when the mobile-navigation-bar icon is clicked, and remove that margin when is clicked again
     function addMargin() {
 
-        if (document.getElementById("h1").style.marginTop != "55vh") {
-            document.getElementById("h1").style.marginTop = "55vh";
+        if (document.getElementById("h1").style.marginTop != "30vh") {
+            document.getElementById("h1").style.marginTop = "30vh";
         } else {
             document.getElementById("h1").style.marginTop = "20px";
         }
@@ -54,7 +45,7 @@ window.addEventListener('load', function(){
     //This function remove the mobile-navigation-bar when a link is clicked
     function left_checker() {
         console.log('hola');
-        var lateral_menu = document.getElementById('lateral-menu');
+        var lateral_menu = document.getElementById('menu');
         lateral_menu.style.left = "-100%";
         lateral_menu.style.background = "transparent";
         document.getElementById("h1").style.marginTop = "20px";
@@ -65,12 +56,12 @@ window.addEventListener('load', function(){
     window.addEventListener("orientationchange", function() {
         
         if (screen.orientation.angle == 90){
-            var lateral_menu = document.getElementById('lateral-menu');
+            var lateral_menu = document.getElementById('menu');
             lateral_menu.style.left = "-100%";
             lateral_menu.style.background = "transparent";
             document.getElementById("h1").style.marginTop = "20px";
         } else if (screen.orientation.angle == 0){
-            var lateral_menu = document.getElementById('lateral-menu');
+            var lateral_menu = document.getElementById('menu');
             lateral_menu.style.left = "-100%";
             lateral_menu.style.background = "transparent";
             document.getElementById("h1").style.marginTop = "20px";
@@ -79,11 +70,3 @@ window.addEventListener('load', function(){
 
 
 });
-    
-    
-
-
-    
-
-    
-

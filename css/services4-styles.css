@@ -149,12 +149,13 @@ a.active, a:hover{
     padding: 10px 0px;
     font-size: 2.5vw;
     transition: all .5s;
+    
 }
 
 #h1:hover{
     text-shadow: 0px 2px 5px #222222;
     background-color: #a5f83f;
-    
+    -webkit-tap-highlight-color: transparent !important;
 }  
 
 
@@ -265,11 +266,17 @@ a.active, a:hover{
 }
 
 
+
+
+/*FOOTER*/
+
+#btnsubmit{
+    -webkit-appearance: none;
+}
+
 #form-iframe{
     display: none;
 }
-
-/*FOOTER*/
 
 #footer{
     padding-top: 0;
@@ -361,9 +368,12 @@ form{
     margin: 0px !important;
     padding: 0px !important;
     text-align: left !important;
-    font-size: 18px;
-    
-    
+    font-size: 18px; 
+}
+
+.info-details p a{
+    text-decoration: none !important;
+    color: white !important;
 }
 
 .info-details h3{
@@ -453,9 +463,40 @@ input[type=submit]:active{
 @media (max-width: 786px){
 
     /*NAVIGATION BAR*/
-    .checkbtn{
-       display: block;
-   }
+    
+    #back-button{
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    #back-button:focus{
+        outline: 0;
+        box-shadow: none!important;
+        background-color: transparent !important;
+    }
+
+   .checkbtn{
+        display: block;
+        border: 1px solid white;
+        background-color: white !important;
+        -webkit-tap-highlight-color: transparent;
+        height: 70px !important;
+
+    }
+
+    .checkbtn:focus{
+        outline: 0;
+        box-shadow: none!important;
+        background-color: white !important;
+    }
+
+    .checkbtn:hover{
+        background-color: white !important;
+    }
+
+    .checkbtn:active{
+        border: 1px solid white !important;
+        background-color: white !important;
+    }
 
    #menu{
        position: fixed;
@@ -478,6 +519,7 @@ input[type=submit]:active{
        color: white;
        width: 100%;
        margin-left: 0px;
+       -webkit-tap-highlight-color: transparent !important;
    }
 
    a:hover, a.active{
